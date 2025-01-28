@@ -1,0 +1,79 @@
+:root {
+  --body-bg: hsl(218, 23%, 16%);
+  --card-bg: hsl(217, 19%, 24%);
+  /* --box-shadow: hsl(217, 19%, 38%)*/
+  --advice: hsl(193, 38%, 86%);
+  --heading: hsl(150, 100%, 66%);
+  --quote-size: 1.75rem; /*28px*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--body-bg);
+}
+
+.advice_container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+  background-color: var(--card-bg);
+  gap: 20px;
+  max-width: 500px;
+  width: 90%;
+  padding: 3.125rem 0.625rem;
+  border-radius: 0.625rem;
+}
+/* 
+.advice_container::after {
+  position: absolute;
+  color: aqua;
+  content: "fdfgftg";
+} */
+
+h4 {
+  color: var(--heading);
+}
+
+.advice {
+  color: var(--advice);
+  text-align: center;
+  text-wrap: balance;
+}
+
+.divider {
+  object-fit: none;
+}
+.dice {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--heading);
+  bottom: -25px;
+  border-radius: 100%;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  color: var(--advice);
+}
+
+.attribution > a {
+  color: var(--heading);
+}
